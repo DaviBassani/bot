@@ -9,11 +9,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='$', intents=intents)
 
-x = 10
-y = 1.5
-z = "String"
-
-
 token = secret.TOKEN()
 
 print("""
