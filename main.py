@@ -41,7 +41,7 @@ async def summary(message, arg):
     busca = wikipedia.summary(arg)
     try: 
         await message.send(f"{busca}")
-    except Exception (e):
+    except Exception as e:
         await message.send(f'Ocorreu o seguinte erro: {e}')
 
 @bot.command()
@@ -49,7 +49,7 @@ async def page(message, arg):
     busca = wikipedia.page(arg)
     try: 
         await message.send(f"{busca}")
-    except Exception (e):
+    except Exception as e:
         await message.send(f'Ocorreu o seguinte erro: {e}')
 
 bot.run(token)
